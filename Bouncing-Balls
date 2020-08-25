@@ -1,0 +1,21 @@
+public class BouncingBall {
+	
+	public static int bouncingBall(double h, double bounce, double window) {
+		  // your code
+      var bounceCounter = 0;
+      // I had (0 < bounce < 1), but was given an error that I cannot use < on type bool and int.
+	    if ((0 < h) && (bounce < 1) && (bounce > 0) && (window < h))
+      {
+        while (window < h){
+          bounceCounter++;
+          h = h * bounce;
+          if(window < h){
+            bounceCounter++;
+          }
+         }
+        return bounceCounter;
+      } else {
+       return -1; 
+      }
+	}
+}
