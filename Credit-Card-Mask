@@ -1,0 +1,17 @@
+using System;
+using System.Collections.Generic;
+
+public static class Kata
+{
+  // return masked string
+  public static string Maskify(string cc)
+  {
+    var charList = new List<char>(cc);
+    for(var i = 0; i < charList.Count -4; i++)
+    {
+        charList[i] = '#';
+    }
+    var backToString = string.Concat(charList);
+    return backToString;
+  }
+}
