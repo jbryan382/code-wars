@@ -1,0 +1,18 @@
+using System;
+
+public class Kata
+{
+  public static int FindShort(string s)
+  {
+    var wordList = s.Split(' ');
+    var shortestWord = wordList[0].Length;
+    for (var i = 0; i < wordList.Length; i++)
+    {
+      if (wordList[i].Length < shortestWord)
+      {
+       shortestWord = wordList[i].Length;
+      }
+    }
+    return shortestWord;
+  }
+}
