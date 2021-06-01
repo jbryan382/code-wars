@@ -43,4 +43,6 @@ function decode(string) {
   }
 //   Return the returnString
   return returnString
+// One line alternative to for and switch solution
+//  return string.split("").map(value => value == 5 ? 0 : value == 0 ? 5 : 10 - value).join("");
 }
